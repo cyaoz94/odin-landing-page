@@ -21,21 +21,25 @@ body {
   background-color: #e5e7eb;
 }
 
-.header,
-.main1,
-.main2,
-.main3,
-.main4,
-.footer {
-  padding-left: 160px;
-  padding-right: 160px;
-}
-
 .main1,
 .main2,
 .main3,
 .main4 {
   flex: 1;
+}
+
+.main1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 900px;
+  margin: auto;
 }
 
 .hero-secondary-text,
@@ -64,13 +68,6 @@ a {
   flex: auto;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -91,6 +88,8 @@ a {
   justify-content: space-between;
   gap: 16px;
   padding: 72px 0;
+  width: 900px;
+  margin: auto;
 }
 
 .hero-container {
@@ -170,14 +169,16 @@ a {
   font-weight: 300;
   color: #1f2937;
   align-self: center;
-  margin: 0 16px;
+  width: 900px;
+  margin: auto;
 }
 
 .quote-footer {
   text-align: right;
   font-size: 18px;
   font-weight: 900;
-  margin: 0 24px;
+  width: 900px;
+  margin: auto;
 }
 
 .main4 {
@@ -189,12 +190,14 @@ a {
 }
 
 .cta-container {
-  flex: 1;
+  flex: 0 1 auto;
   display: flex;
   justify-content: space-around;
   background-color: #3882f6;
   border-radius: 12px;
   padding: 36px 72px;
+  width: 900px;
+  margin: auto;
 }
 
 .cta-main-text {
